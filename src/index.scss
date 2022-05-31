@@ -1,0 +1,86 @@
+$dark-theme: true !default;
+$dark-background: #263238;
+$light-background:#ECEFF1;
+
+$dark-text:#263238;
+$light-text: #ECEFF1;
+
+
+
+
+html, #root {
+  background-color: var(--light-background);
+  color: var(--dark-text);
+}
+
+nav {
+  background-color: var(--dark-background);
+  color: var(--light-text);
+
+  h2 {
+     
+    a {
+      color: var(--light-text);
+    }
+  }
+  div {
+   
+    a {
+      color: var(--light-text);
+      padding: 0 0.5em 0 0.5em;
+    }
+  }
+  
+
+}
+
+button {
+  background-color: var(--dark-background);
+  color: var(--light-text);
+}
+
+.main-container {
+  
+}
+
+
+.theme-dark {
+  --dark-text:#263238;
+  --light-text:#ECEFF1;
+  --dark-background: #263238;
+  --light-background:#ECEFF1;
+  --accent: #90CAF9;
+  --button-border: #90CAF9;
+}
+
+
+.theme-light {
+  --dark-text: #ECEFF1;
+  --light-text: #263238;
+  --dark-background:  #ECEFF1;
+  --light-background: #263238;
+  --accent: #DBE7E4;
+  --button-border: #2962FF;
+}
+
+
+
+
+
+
+
+body {
+  margin: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin:0;
+  padding: 0;
+
+  box-sizing: border-box;
+
+
+}
+
+
+

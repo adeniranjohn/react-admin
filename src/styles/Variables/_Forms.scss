@@ -1,0 +1,61 @@
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    
+   label {
+      margin-top: 0.5rem;
+   }
+    input {
+    padding: 0.5em;
+ }
+
+
+ button {
+    padding:0.5em 1em;
+    margin: 1em 0;
+    max-width: fit-content;
+ }
+
+ span {
+    font-size: 1em;
+    text-decoration: underline;
+    color: #bf4040;
+    padding: 0 0 0 0.5em;
+ }
+
+ textarea {
+    height: 15rem;
+    padding: 0.5em;
+    resize: none;
+    font-family: 'Josefin Sans', sans-serif;
+ }
+
+ fieldset {
+   display: flex;
+   flex-direction: column;
+   margin-top: 1rem;
+
+   label {
+      margin-top: 0.5rem;
+   }
+    input {
+    padding: 0.5em;
+ }
+
+
+ button {
+    padding:0.5em 1em;
+    margin: 1em 0;
+    max-width: fit-content;
+ }
+
+ }
+
+ button {
+    border: none;
+    background-color: var(--dark-background);
+    margin-top: 1rem;
+ }
+
+}

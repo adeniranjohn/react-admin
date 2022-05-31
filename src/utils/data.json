@@ -1,0 +1,46 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "firstName": "Seun",
+      "lastName": "Ogundare",
+      "email": "seunogundare@gmail.com",
+      "password": "seunogundare"
+    },
+    {
+      "id": 2,
+      "firstName": "John",
+      "lastName": "Bolaji",
+      "email": "johnbolaji@gmail.com",
+      "password": "johnbolaji"
+    },
+    {
+      "id": 3,
+      "firstName": "Joseph",
+      "lastName": "Seun",
+      "email": "josephseun@gmail.com",
+      "password": "josephseun"
+    },
+    {
+      "id": 4,
+      "firstName": "Pius",
+      "lastName": "Maxwell",
+      "email": "piusmaxwell@gmail.com",
+      "password": "piusmaxwell"
+    },
+    {
+      "id": 5,
+      "firstName": "Oyelami",
+      "lastName": "Abegunde",
+      "email": "oyelamiabegunde@gmail.com",
+      "password": "oyelamiabegunde"
+    },
+    {
+      "id": 6,
+      "firstName": "Damilola",
+      "lastName": "Oshinowo",
+      "email": "damilolaoshinowo@gmail.com",
+      "password": "damilolaoshinowo"
+    }
+  ]
+}
