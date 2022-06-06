@@ -4,10 +4,13 @@ import data from '../utils/data.json'
 
 const Members = () => {
     
- const { users } = data;
+
+
+
     return (
         <section className="members">
-            <p>List of all Members</p>
+            <h3>Members</h3>
+            <input type="search" />
          {
                 users.map(member => <Member key={member.id} member={member}/>)
             }

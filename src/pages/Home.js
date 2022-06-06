@@ -66,10 +66,13 @@ const Home = () => {
       ) : (
         <section className="registration">
           <form onSubmit={registrationHandler}>
-            <h3>Registration</h3>
-            <p>
+
+          <p>
               Click here to sign in as an<span onClick={changeFormHandler}>old user</span>
-            </p>
+            </p> 
+            
+            <h3>Registration</h3>
+       
             <label>First name</label>
             <input
               type="text"

@@ -7,12 +7,12 @@ const Navbar = () => {
     
         <nav>
         <h2><Link to="/">AdminBoard</Link></h2>
-        <div>
+        <span>
         <Toggle/>
 
         <Link to="/">Login</Link>
     
-           </div>
+           </span>
         
         </nav>
 

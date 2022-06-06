@@ -4,7 +4,9 @@ import Dashboard from './pages/Dashboard'
 import Navbar from './components/Navbar'
 import {  BrowserRouter, Route, Routes } from 'react-router-dom';
 import { keepTheme } from './themes';
-import React, { useEffect } from 'react'
+import React, { useEffect } from 'react';
+import Footer from './components/Footer';
+
 function App() {
 
   useEffect(() => {
@@ -25,7 +27,7 @@ function App() {
         <Route path='/dashboard' element={ <Dashboard/>} />
         </Routes>
       </main>
-  
+  <Footer />
         </BrowserRouter>
     </div>
   );

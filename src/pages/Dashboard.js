@@ -10,7 +10,7 @@ const Dashboard = () => {
 
 
     return (
-        <section>
+        <section className="dashboard">
             <p>Dashboard</p>
             <Members/>
             <Calendar/>
