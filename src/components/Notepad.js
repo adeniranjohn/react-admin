@@ -1,16 +1,28 @@
 import '../styles/Notepad.scss'
+import { v4 as uuid } from 'uuid';
 import { useState } from 'react';
+import Note from './Note';
 
 const Notepad = () => {
+
+    const uniqueId = uuid();
     const [ note, setNote ] = useState({
         subject: "",
-        message: ""
+        message: "",
+        id: ""
     })
 
     const [ notes, setNotes ] = useState([])
     const notepadHandler = (e) => {
         e.preventDefault();
+        note.id = uniqueId;
         setNotes((n) => [...n, note]);
+
+    }
+
+
+    const editNoteHandler = () => { 
+
     }
 
     return (
@@ -44,7 +56,9 @@ const Notepad = () => {
 
             <button type="submit">Save</button>
           </form>
-          {notes}
+          {notes && notes.map(theNote => 
+              <Note key={note.id} note={theNote} editNote={editNoteHandler} /> 
+              )}
         </section>
 
     )
