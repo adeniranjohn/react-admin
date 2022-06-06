@@ -15,7 +15,7 @@ const Member = ({member}) => {
         <article>
             <h4>{member.lastName.toUpperCase()+ ' ' +  member.firstName}</h4>
             <p>{member.email}</p>
-            <div class="space-between">
+            <div className="space-between">
             <span onClick={editUserHandler}>Edit User</span>
             <span onClick={viewProfileHandler}>View Profile</span>
             </div>

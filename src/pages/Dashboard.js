@@ -11,7 +11,7 @@ const Dashboard = () => {
 
     return (
         <section className="dashboard">
-            <p>Dashboard</p>
+            <h2>Dashboard</h2>
             <Members/>
             <Calendar/>
       

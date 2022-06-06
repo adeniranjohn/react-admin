@@ -24,8 +24,8 @@ function App() {
 
     <Routes>
         <Route exact path='/' element={<Home/>} />
-        <Route path='/dashboard' element={ <Dashboard/>} />
-        </Routes>
+        <Route path='/dashboard' element={<Dashboard/>} />
+    </Routes>
       </main>
   <Footer />
         </BrowserRouter>

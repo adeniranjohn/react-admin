@@ -1,6 +1,6 @@
 import '../styles/Monitor.scss'
 
-const Moinitor = () => {
+const Monitor = () => {
 
 
 
@@ -11,4 +11,4 @@ const Moinitor = () => {
     )
 }
 
-export default Moinitor;
+export default Monitor;
