@@ -6,6 +6,8 @@ const Calendar = () => {
             eventDate: '',
             eventMessage: ''
         })
+
+
     return (
         <section className="calendar"> 
     <h4>Create Event</h4>

@@ -5,24 +5,23 @@ import Note from './Note';
 
 const Notepad = () => {
 
-    const uniqueId = uuid();
+   
     const [ note, setNote ] = useState({
-        subject: "",
-        message: "",
-        id: ""
+      subject: "",
+      message: "",
+
     })
 
     const [ notes, setNotes ] = useState([])
     const notepadHandler = (e) => {
         e.preventDefault();
-        note.id = uniqueId;
-        setNotes((n) => [...n, note]);
-
+        setNotes(() => [...notes, note]);
+        e.target.reset();
     }
 
 
-    const editNoteHandler = () => { 
-
+    const editNoteHandler = (note) => { 
+      console.log(note);
     }
 
     return (
@@ -56,8 +55,8 @@ const Notepad = () => {
 
             <button type="submit">Save</button>
           </form>
-          {notes && notes.map(theNote => 
-              <Note key={note.id} note={theNote} editNote={editNoteHandler} /> 
+          {notes && notes.map((theNote, id) => 
+              <Note key={id} note={theNote} editNote={()=>editNoteHandler(note)} /> 
               )}
         </section>
 

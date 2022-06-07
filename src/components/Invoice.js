@@ -25,6 +25,7 @@ const Invoice = () => {
   const invoiceHandler = (e) => {
     e.preventDefault();
     console.log(invoice);
+    e.target.reset();
   };
 
   return (
