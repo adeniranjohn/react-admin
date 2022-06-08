@@ -6,22 +6,22 @@ const Invoice = () => {
     description: "",
     rate: 0,
   });
-
+  const [items, setItems] = useState([]);
   const [invoice, setInvoice] = useState({
     name: "",
     address: "",
     phoneNumber: "",
     email: "",
-    items: item,
+    items: [],
     paid: false,
   });
 
-  const [items, setItems] = useState([]);
-
   const addItemHandler = (e) => {
     e.preventDefault();
-    setItems((items) => [...items, item]);
+    setItems(prevState => [...prevState, item]);
   };
+
+
   const invoiceHandler = (e) => {
     e.preventDefault();
     console.log(invoice);
@@ -36,7 +36,6 @@ const Invoice = () => {
         <label>Name</label>
         <input
           type="text"
-          name="name"
           placeholder="Full name"
           onChange={(e) => {
             setInvoice({ ...invoice, name: e.target.value });
@@ -45,7 +44,6 @@ const Invoice = () => {
         <label>Address</label>
         <input
           type="text"
-          name="address"
           placeholder="Address"
           onChange={(e) => {
             setInvoice({ ...invoice, address: e.target.value });
@@ -91,7 +89,7 @@ const Invoice = () => {
             }}
           />
 
-          <label>Rate</label>
+          <label>Rate per unit(&#8358;)</label>
           <input
             type="number"
             name="rate"
@@ -99,33 +97,37 @@ const Invoice = () => {
               setItem({ ...item, rate: e.target.value });
             }}
           />
+
+          <button onClick={addItemHandler}>Add Item</button>
         </fieldset>
-        <button onClick={addItemHandler}>Add Item</button>
+
         <table>
           <tbody>
             <tr>
-              <td>Quantity</td>
+              <td>Qty</td>
               <td>Description</td>
               <td>Rate</td>
               <td>Total</td>
             </tr>
-            {items.map((x) => (
-              <tr>
-                <td> {x.quantity} </td>
-                <td> {x.description} </td>
-                <td>{x.rate}</td>
-                <td>{Number(x.quantity) * Number(x.rate)}</td>
+            {items.map((item, idx) => (
+              <tr key={idx}>
+                <td> {item.quantity} </td>
+                <td> {item.description} </td>
+                <td>{item.rate}</td>
+                <td colSpan="2">
+                  &#8358; {Number(item.quantity) * Number(item.rate)}
+                </td>
               </tr>
             ))}
-            <tr>
-              <td>
-                <h2>
-                  Total:{" "}
+            <tr colSpan="4">
+            
+    
+                  Total: &#8358;{" "}
                   {items.reduce((total, item) => {
                     return (total += Number(item.quantity) * Number(item.rate));
                   }, 0)}
-                </h2>
-              </td>
+           
+             
             </tr>
           </tbody>
         </table>
@@ -139,7 +141,8 @@ const Invoice = () => {
           }}
         />
 
-        <button type="submit">Generate Receipt</button><button>Reset</button>
+        <button type="submit">Generate Receipt</button>
+        <button>Reset</button>
       </form>
     </section>
   );

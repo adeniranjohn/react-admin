@@ -1,5 +1,4 @@
 import '../styles/Notepad.scss'
-import { v4 as uuid } from 'uuid';
 import { useState } from 'react';
 import Note from './Note';
 
