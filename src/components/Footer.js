@@ -6,7 +6,7 @@ const Footer = () => {
 return (
     <footer>
 
-        <small>&copy; John Adeniran</small>
+        <small>&copy; John Adeniran, 2022</small>
     </footer>
 )
 

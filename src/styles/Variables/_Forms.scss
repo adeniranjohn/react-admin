@@ -53,6 +53,17 @@ form {
 
  }
 
+ p {
+
+   padding: 0;
+      small {
+         text-decoration: underline;
+         color: #bf4040;
+      }
+ }
+
+
+
  button {
     border: none;
     background-color: var(--dark-background);
