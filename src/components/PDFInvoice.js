@@ -9,8 +9,8 @@ import {
   // Create styles
   const styles = StyleSheet.create({
     page: {
-      backgroundColor: "#d11fb6",
-      color: "white",
+
+      color: "black",
     },
     section: {
       margin: 10,
@@ -34,10 +34,10 @@ const PDFInvoice = () => {
       <Document>
         <Page size="A4" style={styles.page}>
           <View style={styles.section}>
-            <Text>Hello</Text>
+            <Text>Generate Receipt</Text>
           </View>
           <View style={styles.section}>
-            <Text>World</Text>
+          
           </View>
         </Page>
       </Document>

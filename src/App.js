@@ -24,7 +24,7 @@ function App() {
 
     <Routes>
         <Route exact path='/' element={<Home/>} />
-        <Route path='/dashboard' element={<Dashboard/>} />
+        <Route  exact  path='/dashboard' element={<Dashboard/>} />
     </Routes>
       </main>
   <Footer />

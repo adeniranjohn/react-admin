@@ -10,7 +10,7 @@ const Navbar = () => {
         <span>
         <Toggle/>
 
-        <Link to="/">Login</Link>
+        <Link to="/dashbaord">Dashboard</Link>
     
            </span>
         

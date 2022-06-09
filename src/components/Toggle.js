@@ -29,7 +29,7 @@ function Toggle() {
     return (
         <div className="toggle">
         
-                <span onClick={handleOnClick}>{   togClass === "light" ?   <MdModeNight />  : < WiDaySunny /> } </span>
+                <span onClick={handleOnClick}>{   togClass === "light" ?  < WiDaySunny />   : <MdModeNight /> } </span>
         </div>
     )
 }

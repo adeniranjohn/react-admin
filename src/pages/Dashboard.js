@@ -16,9 +16,10 @@ const Dashboard = () => {
             <Members/>
             <Calendar/>
       
-            <Monitor/>
+         
             <Invoice/>
             <Notepad/>
+            <Monitor/>
         </section>
     )
 }
