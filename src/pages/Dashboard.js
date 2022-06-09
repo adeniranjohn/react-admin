@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/Dashboard.scss';
 import Invoice from '../components/Invoice'
 import Members from '../components/Members';
 import Calendar from '../components/Calendar';
@@ -11,7 +12,7 @@ const Dashboard = () => {
 
     return (
         <section className="dashboard">
-            <h2>Dashboard</h2>
+
             <Members/>
             <Calendar/>
       

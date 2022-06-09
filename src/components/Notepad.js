@@ -3,7 +3,6 @@ import { useState } from 'react';
 import Note from './Note';
 
 const Notepad = () => {
-
    
     const [ note, setNote ] = useState({
       subject: "",
