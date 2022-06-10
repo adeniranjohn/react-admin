@@ -1,6 +1,12 @@
 import React, { useState } from "react";
+import { useSelector, useDispatch } from 'react-redux'
+import { registerUser } from "../../redux/userSlice";
 
 const Register = ({ changeForm }) => {
+  const dispatch = useDispatch();
+  const state = useSelector((state) => state);
+
+  
   const [registration, setRegistration] = useState({
     firstName: "",
     lastName: "",
@@ -13,6 +19,9 @@ const Register = ({ changeForm }) => {
   const registrationHandler = (e) => {
     e.preventDefault();
     console.log(registration);
+    dispatch(registerUser(registration));
+    console.log(state)
+
   };
 
   return (

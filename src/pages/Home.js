@@ -11,6 +11,8 @@ const Home = () => {
     setForm(!form);
   };
 
+  
+
   return (
     <section className="home">
       <section className="form">

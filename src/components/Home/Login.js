@@ -1,6 +1,12 @@
 import React, { useState } from "react";
 import ResetEmail from "./ResetEmail";
+import { loginUser } from '../../redux/userSlice';
+import {  useDispatch } from 'react-redux'
 const Login = ({ changeForm }) => {
+
+  const dispatch = useDispatch();
+
+
   const [login, setLogin] = useState({
     email: "",
     password: "",
@@ -10,6 +16,7 @@ const Login = ({ changeForm }) => {
 
   const loginHandler = (e) => {
     e.preventDefault();
+    dispatch(loginUser(login));
     console.log(login);
   };
 
